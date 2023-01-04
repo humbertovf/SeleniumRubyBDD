@@ -13,6 +13,7 @@ require 'selenium-webdriver'
 Before do |scenario|
   @browser = Watir::Browser.new :chrome
   @browser.window.maximize
+  @browser.radio(value: "roundtrip")
 end
 
 After do |scenario|

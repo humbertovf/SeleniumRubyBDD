@@ -16,12 +16,14 @@ class HomePage
   end
 
   def typeUserName(record)
-    userNameTxt.send_keys @data_record.readRecordFile["#{record}"]['username']
+    userNameTxt.send_keys @data_record.readRecordFile("flights_record")["#{record}"]['username']
+    # @data_record.readRecordFile("record") = data_record
+    # sintaxis simple data_record["record#"]['field']
   end
 
   def typePassword(record)
     # @passwordTxt = @browser.text_field(name: "password")
-    passwordTxt.send_keys @data_record.readRecordFile["#{record}"]['password']
+    passwordTxt.send_keys @data_record.readRecordFile("flights_record")["#{record}"]['password']
   end
 
   def clickSubmitBtn

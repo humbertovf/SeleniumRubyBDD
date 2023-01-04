@@ -14,7 +14,7 @@ Feature: Login
       | selenium | selenium | Login Successfulli | logout message |
       | tutorial | tutorial | Login Successfully | logout message |
 
-  @parameters
+  @record
   Scenario Outline: Verify login and logut functionality using records
     Given User lands to login page
     When login with credentials using record <record>
