@@ -36,4 +36,8 @@ class HomePage
     return loginMsg.text
   end
 
+  def clickRegister
+    registerLink.click
+  end
+
 end

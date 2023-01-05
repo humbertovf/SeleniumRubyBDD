@@ -15,7 +15,7 @@ When(/^a flight is scheduled using the same record (.*)$/) do |record|
   @flights.clickOnContinueBtn
 end
 
-Then(/^user should get a message$/) do |expectedMessage|
+Then(/^user should land on this url (.*)$/) do |expectedMessage|
   # sleep(3)
   actualMsg = @flights.getURL
   puts actualMsg

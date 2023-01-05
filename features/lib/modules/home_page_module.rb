@@ -19,4 +19,8 @@ module HomePage_module
   def loginMsg
     @browser.element(css: "tbody tr td h3")
   end
+
+  def registerLink
+    @browser.link(text: "REGISTER")
+  end
 end
